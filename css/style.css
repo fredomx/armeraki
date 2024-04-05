@@ -84,7 +84,7 @@ textarea.form-control {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 60px 110px;
+  padding: 60px 50px;
   z-index: 2;
   -webkit-transition: .3s all ease-in-out;
   -o-transition: .3s all ease-in-out;
@@ -118,7 +118,7 @@ textarea.form-control {
     border: 10px solid #f8f9fa; }
 
 .site-logo {
-  padding-left: 40px; }
+}
   .site-logo a {
     font-size: 30px;
     color: #fff;
@@ -263,7 +263,7 @@ textarea.form-control {
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
-  margin-right: 40px; }
+   }
   .site-menu-toggle span {
     display: block;
     position: absolute;
@@ -311,6 +311,13 @@ textarea.form-control {
   @media (max-width: 991.98px) {
     .section {
       padding: 3em 0; } }
+
+
+.section-borderless {
+  padding: 3em 0; }
+  @media (max-width: 991.98px) {
+    .section {
+      padding: 2em 0; } }
 
 @media (max-width: 991.98px) {
   .lead {
@@ -1292,7 +1299,7 @@ textarea.form-control {
 
 
 .footer-svg {
-  width: 200px;
+  width: 250px;
 
 }
 
@@ -1351,7 +1358,7 @@ textarea.form-control {
 
 .bungalows-video {
 
-  height: 400px;
+  height: 300px;
 }
 
 /* Events cards */

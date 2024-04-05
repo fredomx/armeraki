@@ -29,6 +29,30 @@
 	});
 
 
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      items: 3, // Number of items to show
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+      responsiveClass:true,
+      responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:2,
+        },
+        1000:{
+            items:3,
+        }
+      }
+    });
+  });
+
+
 
 	$('#dropdown04').on('show.bs.dropdown', function () {
 	  console.log('show');
