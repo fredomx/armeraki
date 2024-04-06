@@ -240,7 +240,7 @@ textarea.form-control {
     font-size: 80px;
     font-family: "Montserrat", times, serif;
     color: #fff;
-    margin-left: 100px;
+    /* margin-left: 100px; */
     line-height: 1;
     font-weight: 400; }
     @media (max-width: 991.98px) {
@@ -578,7 +578,7 @@ textarea.form-control {
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease;
-    color: #495057; }
+    color: transparent; }
     .owl-carousel.major-caousel .owl-nav .owl-prev:hover, .owl-carousel.major-caousel .owl-nav .owl-prev:focus, .owl-carousel.major-caousel .owl-nav .owl-next:hover, .owl-carousel.major-caousel .owl-nav .owl-next:focus {
       color: #6c757d;
       outline: none; }
@@ -1555,3 +1555,7 @@ textarea.form-control {
   background-color: transparent;
 }
 
+.ad-header {
+  font-size: 40px;
+
+}
