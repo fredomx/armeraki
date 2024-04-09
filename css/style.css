@@ -1331,10 +1331,9 @@ textarea.form-control {
 
 .image-card {
   position: relative;
-  width: 450px;
   overflow: hidden;
   border-radius: 5px;
-  margin: 80px 0px;
+  margin: 10px;
 }
 
 .image-card img {
