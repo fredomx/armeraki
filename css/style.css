@@ -199,6 +199,19 @@ textarea.form-control {
   height: 100vh;
   min-height: 700px; }
 
+  .fullscreen-video {
+    display: none; /* Initially hide the video */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+
 .site-hero {
   background-size: cover;
   height: 100vh;
