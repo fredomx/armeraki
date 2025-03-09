@@ -1650,9 +1650,9 @@ textarea.form-control {
   position: absolute;
   top: 0;
   left: 0;
-  width: 120%;
+  width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   z-index: -1;
   opacity: 0.9;
 }
