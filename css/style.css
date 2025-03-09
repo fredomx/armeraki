@@ -1400,6 +1400,7 @@ textarea.form-control {
 .events-card {
   position: relative;
   width: 100%;
+  height: 100%;
   overflow: hidden;
   border-radius: 5px;
 }
@@ -1479,6 +1480,7 @@ textarea.form-control {
   position: relative;
   width: 100%; /* Ensure the container takes up the full width */
   overflow: hidden; 
+  height: 100%;
 
 }
 
@@ -1641,3 +1643,18 @@ textarea.form-control {
   height: 2px; /* Thickness of the underline */
   background-color: rgb(180, 178, 178); /* Grey color for the underline */
 }
+
+/* Hero video */
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+/* Hero video */
