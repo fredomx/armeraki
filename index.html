@@ -180,6 +180,17 @@
   
                       <div class="mb-5 col-10">
                           <h2 class="heading" data-aos="fade-up">Bungalows</h2>
+
+
+
+                          <div class="container">
+                            <!-- Aquí será el texto editable -->
+                            <h1 id="welcome-text"></h1>
+                          </div>
+
+                        
+
+
                           <p data-aos="fade-up">{{ bungalows_description }}</p>
                       </div>
   
@@ -488,6 +499,7 @@
     </footer>
     
     
+
     
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -505,5 +517,25 @@
     
 
     <script src="js/main.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/decap-cms@2.0.0/dist/decap-cms.min.js"></script>
+    <script>
+        // Inicializa Decap CMS
+        DecapCMS.init({
+            config: '/admin/config.yml', // Archivo de configuración de Decap CMS
+            media_folder: '/static/img',
+            public_folder: '/img'
+        });
+
+        // Cargar el contenido desde Decap CMS
+        DecapCMS.content('home')
+            .then(data => {
+                // Inyectar el texto editable en tu HTML
+                document.getElementById('welcome-text').innerText = data.welcome_text;
+            });
+    </script>
+
+    
   </body>
 </html>

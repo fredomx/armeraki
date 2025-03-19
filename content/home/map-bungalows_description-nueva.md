@@ -1,3 +1,0 @@
----
-bungalows_description: Nueva
----
