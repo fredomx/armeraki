@@ -180,24 +180,13 @@
   
                       <div class="mb-5 col-10">
                           <h2 class="heading" data-aos="fade-up">Bungalows</h2>
-
-
-
-                          <div class="container">
-                            <!-- Aquí será el texto editable -->
-                            <h1 id="welcome-text"></h1>
-                          </div>
-
-                        
-
-
-                          <p data-aos="fade-up">{{ bungalows_description }}</p>
+                          <p data-aos="fade-up">No contamos mas que con el numero de bungalows adecuados para crear tu hogar dentro del entorno sagrado de las tierras de Oaxaca, para tu completo placer y privacidad.</p>
                       </div>
   
                       <div data-aos="fade-up">
                         <a href="bungalows.html">
                           <div class="image-card">
-                              <img src="{{ eros_image }}" alt="Eros">
+                              <img src="images/bungalows/eros.png" alt="Eros">
                               <div class="bungalows-overlay">
                                   <div class="bungalows-overlay-content">
                                       <h3>Eros</h3>
@@ -219,7 +208,7 @@
 
                         <a href="bungalows.html">
                         <div class="image-card">
-                            <img src="{{ philia_image }}" alt="Philia">
+                            <img src="images/bungalows/philia.png" alt="Philia">
                             <div class="bungalows-overlay">
                                 <div class="bungalows-overlay-content">
                                     <h3>Philia</h3>
@@ -236,7 +225,7 @@
                       <div data-aos="fade-up">
                         <a href="bungalows.html">
                           <div class="image-card">
-                              <img src="{{ agape_image }}" alt="Agape">
+                              <img src="images/bungalows/agape.png" alt="Agape">
                               <div class="bungalows-overlay">
                                   <div class="bungalows-overlay-content">
                                       <h3>Agape</h3>
@@ -499,7 +488,6 @@
     </footer>
     
     
-
     
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -517,25 +505,5 @@
     
 
     <script src="js/main.js"></script>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/decap-cms@2.0.0/dist/decap-cms.min.js"></script>
-    <script>
-        // Inicializa Decap CMS
-        DecapCMS.init({
-            config: '/admin/config.yml', // Archivo de configuración de Decap CMS
-            media_folder: '/static/img',
-            public_folder: '/img'
-        });
-
-        // Cargar el contenido desde Decap CMS
-        DecapCMS.content('home')
-            .then(data => {
-                // Inyectar el texto editable en tu HTML
-                document.getElementById('welcome-text').innerText = data.welcome_text;
-            });
-    </script>
-
-    
   </body>
 </html>
