@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: main  # Cambia esto por tu rama principal si es diferente
+
+media_folder: "static/img"  # Esta es la carpeta donde se guardarán las imágenes
+public_folder: "/img"  # Carpeta pública donde se acceden las imágenes
+
+collections:
+  - name: "home"  # Nombre de la colección
+    label: "Pagina principal"
+    folder: "content/home" 
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Home video"
+        name: "homevideo"
+        widget: "video"
+        required: true
+
