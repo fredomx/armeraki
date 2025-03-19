@@ -1,19 +1,32 @@
 backend:
   name: git-gateway
-  branch: main  # Cambia esto por tu rama principal si es diferente
+  branch: main  # Cambia esto si tu rama principal tiene otro nombre
 
-media_folder: "static/img"  # Esta es la carpeta donde se guardarán las imágenes
-public_folder: "/img"  # Carpeta pública donde se acceden las imágenes
+media_folder: "static/img"  # Carpeta donde se guardarán las imágenes
+public_folder: "/img"  # Ruta pública para acceder a las imágenes
 
 collections:
-  - name: "home"  # Nombre de la colección
-    label: "Pagina principal"
-    folder: "content/home" 
+  - name: "home"
+    label: "Página Principal"
+    folder: "content/home"  # Carpeta donde se guardará el archivo de contenido de la página principal
     create: true
     slug: "{{slug}}"
     fields:
-      - label: "Home video"
-        name: "homevideo"
-        widget: "video"
-        required: true
+      - label: "Descripción de Bungalows"
+        name: "bungalows_description"
+        widget: "text"  # Campo de texto para la descripción de Bungalows
 
+      - label: "Imagen Eros"
+        name: "eros_image"
+        widget: "image"  # Campo de imagen para Eros
+        required: false
+
+      - label: "Imagen Philia"
+        name: "philia_image"
+        widget: "image"  # Campo de imagen para Philia
+        required: false
+
+      - label: "Imagen Agape"
+        name: "agape_image"
+        widget: "image"  # Campo de imagen para Agape
+        required: false
