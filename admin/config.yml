@@ -1,15 +1,15 @@
 backend:
   name: git-gateway
-  branch: main  # O el nombre de tu rama principal
+  branch: main  # Asegúrate de que sea el nombre correcto de tu rama
 
 media_folder: "images/uploads"  # Carpeta donde se guardarán las imágenes
 
 collections:
-  - name: "home"
-    label: "Página Principal"
-    folder: "content/home"  # Carpeta donde se guardará el archivo de contenido de la página principal
-    create: true
-    fields:
-      - label: "Texto de Bienvenida"
-        name: "welcome_text"
-        widget: "text"  # Campo de texto para el texto que quieres cambiar
+  - name: "homepage"
+    label: "Homepage"
+    files:
+      - name: "index"
+        label: "Página de inicio"
+        file: "index.html"
+        fields:
+          - { name: "titulo", label: "Título", widget: "string" }
