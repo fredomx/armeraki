@@ -27,8 +27,6 @@
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-
   </head>
   <body>
     
@@ -185,6 +183,7 @@
 
                         <div id="titulo"></div>
 
+                          <h1>{{ title }}</h1>
                           <h2 class="heading" data-aos="fade-up" id="titulo"></h2>
                           <p data-aos="fade-up">No contamos mas que con el numero de bungalows adecuados para crear tu hogar dentro del entorno sagrado de las tierras de Oaxaca, para tu completo placer y privacidad.</p>
                       </div>
@@ -503,18 +502,6 @@
     <script src="js/jquery.stellar.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
 
-    <script>
-      fetch('content/home.md')
-        .then(response => response.text())
-        .then(data => {
-          const htmlContent = marked.parse(data);
-          document.getElementById('titulo').innerHTML = htmlContent.querySelector('h2').innerHTML;
-          document.getElementById('contenido').innerHTML = htmlContent.querySelector('p').innerHTML;
-        })
-        .catch(error => {
-          console.error('Error al cargar el archivo Markdown:', error);
-        });
-    </script>
     
     <script src="js/aos.js"></script>
     
