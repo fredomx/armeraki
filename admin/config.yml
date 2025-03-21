@@ -2,14 +2,14 @@ backend:
   name: git-gateway
   branch: main  # Asegúrate de que sea el nombre correcto de tu rama
 
-media_folder: "images/uploads"  # Carpeta donde se guardarán las imágenes
+media_folder: "static/img"
 
 collections:
   - name: "homepage"
     label: "Homepage"
-    files:
+    files: 
       - name: "index"
         label: "Página de inicio"
-        file: "index.html"
+        file: "content/home.md"
         fields:
           - { name: "titulo", label: "Título", widget: "string" }

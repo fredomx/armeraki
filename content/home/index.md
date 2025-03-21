@@ -1,3 +1,3 @@
 ---
-welcome_text: Nuevo titulo princiapl
+titulo: "Bienvenido a Nuestro Sitio"
 ---
