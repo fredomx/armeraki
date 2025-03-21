@@ -506,7 +506,7 @@
           const content = data.split('---')[2].trim(); // Obtiene el contenido después del frontmatter
           const parser = new DOMParser();
           const htmlDoc = parser.parseFromString(content, 'text/html');
-          document.getElementById('titulo').innerText = htmlDoc.querySelector('h1').innerText;
+          document.getElementById('titulo').innerText = htmlDoc.querySelector('h2').innerText;
           document.getElementById('contenido').innerHTML = htmlDoc.querySelector('p').innerHTML;
         });
     </script>
