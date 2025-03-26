@@ -10,5 +10,6 @@ collections:
     files:
       - file: "content/home/index.md"
         label: "Homepage Settings"
+        name: "homepage-settings"  # Agregado el campo 'name'
         fields:
           - { label: "Header Text", name: "header", widget: "string" }
