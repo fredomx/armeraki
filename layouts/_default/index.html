@@ -32,6 +32,9 @@
 
   </head>
   <body>
+
+    {{ with .Site.GetPage "home/index" }}
+
     
     <header class="site-header js-site-header">
       <div class="container-fluid">
@@ -183,17 +186,8 @@
                   <div class="col-lg-6">
   
                       <div class="mb-5 col-10">
-
-                  
-
-
-                        {{ with .Site.GetPage "/home/index.md" }}
-                          <h2 class="heading" data-aos="fade-up">{{ .Params.header }}</h2>
-                        {{ end }}
-
-                
-                          <h2 class="heading" data-aos="fade-up" id="titulo"></h2>
-                          <p data-aos="fade-up">No contamos mas que con el numero de bungalows adecuados para crear tu hogar dentro del entorno sagrado de las tierras de Oaxaca, para tu completo placer y privacidad.</p>
+                        <h2 data-aos="fade-up" class="heading">{{ .Params.bungalows_home_title }}</h2>
+                        <p data-aos="fade-up">{{ .Params.bungalows_home_description }}</p>
                       </div>
   
                       <div data-aos="fade-up">
@@ -518,5 +512,9 @@
     
 
     <script src="js/main.js"></script>
+
+    {{ end }}
+
   </body>
 </html>
+
