@@ -185,9 +185,15 @@
                   <!-- Left side of the column -->
                   <div class="col-lg-6">
   
+
                       <div class="mb-5 col-10">
-                        <h2 data-aos="fade-up" class="heading">{{ .Params.bungalows_home_title }}</h2>
-                        <p data-aos="fade-up">{{ .Params.bungalows_home_description }}</p>
+
+                        {{ with .Params.bungalows }}
+                        <h2 data-aos="fade-up" class="heading">{{ .title }}</h2>
+                        <p data-aos="fade-up">{{ .description }}</p>
+                        {{ end }}
+
+                  
                       </div>
   
                       <div data-aos="fade-up">
@@ -285,8 +291,11 @@
         <div class="container">
           
           <div class="Container col-lg-6 col-10 mb-5">
-            <h2 class="heading" data-aos="fade-up">Experiences </br>& events</h2>
-            <p data-aos="fade-up">Con el mismo espíritu que emana del 3er nivel de bienestar de la mente en Armeraki estamos listos para ofrecerte a ti y a tus invitados la ceremonia, recepción o evento petit que estás buscando acorde a tu estilo de vida.</p>
+
+            {{ with .Params.events }}
+            <h2 data-aos="fade-up" class="heading">{{ .title }}</h2>
+            <p data-aos="fade-up">{{ .description }}</p>
+            {{ end }}
           </div>
   
         </div>

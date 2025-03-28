@@ -8,11 +8,17 @@ media_folder: "assets/images"
 
 collections:
   - name: "homepage"
-    label: "Pagina inicio"
+    label: "Página inicio"
     files:
       - file: "content/home/index.md"
         label: "Contenido general"
-        name: "general"  # Agregado el campo 'name'
+        name: "homepage"
         fields:
-          - { label: "Encabezado Bungalows", name: "bungalows_home_title", widget: "string" }
-          - { label: "Descripción Bungalows", name: "bungalows_home_description", widget: "string" }
+          - { label: "Sección Bungalows", name: "bungalows", widget: "object", fields: [
+              { label: "Encabezado Bungalows", name: "title", widget: "string" },
+              { label: "Descripción Bungalows", name: "description", widget: "string" }
+            ] }
+          - { label: "Sección Eventos", name: "events", widget: "object", fields: [
+              { label: "Título Eventos", name: "title", widget: "string" },
+              { label: "Descripción Eventos", name: "description", widget: "string" }
+            ] }
