@@ -2,7 +2,6 @@ backend:
   name: git-gateway
   branch: main  # Asegúrate de que sea el nombre correcto de tu rama
   
-i18n: true
 locale: 'es'
 
 media_folder: "assets/images"
