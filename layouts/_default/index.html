@@ -305,19 +305,23 @@
         <div class="container">
         <div class="owl-carousel owl-theme">
           <!-- First card -->
+          {{ with .Params.event_1 }}
           <div class="item">
             <div class="events-card">
-              <img src="images/experiences/yoga.png" alt="Image">
+              
+              <img src="{{ .image }}" alt="Image">
               <div class="events-overlay">
                 <div class="events-overlay-content">
-                  <p>Recobra tu balance interno. Fortaleza para el cuerpo desde dentro. Técnicas ancestrales mente / cuerpo / alma como un todo.</p>
+                  <p>{{ .description }}</p>
                 </div>
               </div>
+              
             </div>
               <h3 class="events-title">
-                Yoga
+                {{ .title }}
               </h3>
           </div>
+          {{ end }}
         
           <!-- Second card -->
           <div class="item">

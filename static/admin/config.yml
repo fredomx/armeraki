@@ -22,3 +22,23 @@ collections:
               { label: "Título Eventos", name: "title", widget: "string" },
               { label: "Descripción Eventos", name: "description", widget: "string" }
             ] }
+          - { label: "Evento 1", name: "event_1", widget: "object", fields: [
+              { label: "Título de evento", name: "title", widget: "string" },
+              { label: "Descripción de evento", name: "description", widget: "string" },
+              { label: "Imagen de evento", name: "image", widget: "image" },
+            ] }
+          - { label: "Evento 2", name: "event_2", widget: "object", fields: [
+              { label: "Título de evento", name: "title", widget: "string" },
+              { label: "Descripción de evento", name: "description", widget: "string" },
+              { label: "Imagen de evento", name: "image", widget: "image" },
+            ] }
+          - { label: "Evento 3", name: "event_3", widget: "object", fields: [
+              { label: "Título de evento", name: "title", widget: "string" },
+              { label: "Descripción de evento", name: "description", widget: "string" },
+              { label: "Imagen de evento", name: "image", widget: "image" },
+            ] }
+          - { label: "Evento 4", name: "event_4", widget: "object", fields: [
+              { label: "Título de evento", name: "title", widget: "string" },
+              { label: "Descripción de evento", name: "description", widget: "string" },
+              { label: "Imagen de evento", name: "image", widget: "image" },
+            ] }
