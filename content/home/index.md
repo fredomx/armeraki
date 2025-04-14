@@ -14,11 +14,7 @@ event_1:
   title: Yoga
   description: Recobra tu balance interno. Fortaleza para el cuerpo desde dentro.
     Técnicas ancestrales mente / cuerpo / alma como un todo.
-<<<<<<< HEAD
-  image: /images/dual-1.png
-=======
   image: /images/experiences/yoga.png
->>>>>>> d1ddbf9 (Experiences cards decap added)
 event_2:
   title: Massage space
   description: Recobra tu balance interno. Fortaleza para el cuerpo desde dentro.
