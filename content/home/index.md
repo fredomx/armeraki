@@ -14,7 +14,7 @@ event_1:
   title: Yoga
   description: Recobra tu balance interno. Fortaleza para el cuerpo desde dentro.
     Técnicas ancestrales mente / cuerpo / alma como un todo.
-  image: /images/eneko-urunuela-i2ysmeuagdy-unsplash.jpg
+  image: /images/dual-1.png
 event_2:
   title: Massage space
   description: Recobra tu balance interno. Fortaleza para el cuerpo desde dentro.
