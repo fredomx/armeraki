@@ -324,49 +324,56 @@
           {{ end }}
         
           <!-- Second card -->
+          {{ with .Params.event_2 }}
           <div class="item">
             <div class="events-card">
-              <img src="images/experiences/massage.png" alt="Image">
+              <img src="{{ .image }}" alt="Image">
               <div class="events-overlay">
                 <div class="events-overlay-content">
-                  <p>Recobra tu balance interno. Fortaleza para el cuerpo desde dentro. Técnicas ancestrales mente / cuerpo / alma como un todo.</p>
+                  <p>{{ .description }}</p>
                 </div>
               </div>
             </div>
             <h3 class="events-title">
-              Massage space
+              {{ .title }}
             </h3>
           </div>
+          {{ end }}
   
            <!-- Third card -->
+           {{ with .Params.event_3 }}
            <div class="item">
             <div class="events-card">
-              <img src="images/experiences/weddings.png" alt="Image">
+              <img src="{{ .image }}" alt="Image">
               <div class="events-overlay">
                 <div class="events-overlay-content">
-                  <p>Recobra tu balance interno. Fortaleza para el cuerpo desde dentro. Técnicas ancestrales mente / cuerpo / alma como un todo.</p>
+                  <p>{{ .description }}</p>
                 </div>
               </div>
             </div>
             <h3 class="events-title">
-              Petit-Exclusive Weddings
+              {{ .title }}
             </h3>
           </div>
+          {{ end }}
         
            <!-- Fourth card -->
+           {{ with .Params.event_4 }}
            <div class="item">
             <div class="events-card">
-              <img src="images/experiences/holistic.png" alt="Image">
+              <img src="{{ .image }}" alt="Image">
               <div class="events-overlay">
                 <div class="events-overlay-content">
-                  <p>Recobra tu balance interno. Fortaleza para el cuerpo desde dentro. Técnicas ancestrales mente / cuerpo / alma como un todo.</p>
+                  <p>{{ .description }}</p>
                 </div>
               </div>
             </div>
             <h3 class="events-title">
-              Holistic fitness routine
+              {{ .title }}
             </h3>
           </div>
+          {{ end }}
+
   
     
         
