@@ -29,5 +29,5 @@ event_4:
   title: Holistic fitness routine
   description: Recobra tu balance interno. Fortaleza para el cuerpo desde dentro.
     Técnicas ancestrales mente / cuerpo / alma como un todo.
-  image: /images/eneko-urunuela-i2ysmeuagdy-unsplash.jpg
+  image: /images/holistic.png
 ---
