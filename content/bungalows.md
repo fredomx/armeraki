@@ -1,0 +1,5 @@
+---
+title: "Bungalows"
+layout: "bungalows"
+---
+

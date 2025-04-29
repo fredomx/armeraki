@@ -1,0 +1,5 @@
+---
+title: "Cafe"
+layout: "cafe"
+
+---

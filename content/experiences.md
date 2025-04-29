@@ -1,5 +1,6 @@
 ---
 title: "Experiencias"
+layout: "experiences"
 description: "Conoce nuestras actividades destacadas para todos los gustos y edades."
 experiancias:
   - experiencia_1:

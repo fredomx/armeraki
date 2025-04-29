@@ -1,4 +1,5 @@
 ---
+title: "Inicio"
 bungalows:
   title: Bungalows
   description: No contamos mas que con el numero de bungalows adecuados para crear
@@ -29,5 +30,5 @@ event_4:
   title: Holistic fitness routine
   description: Recobra tu balance interno. Fortaleza para el cuerpo desde dentro.
     Técnicas ancestrales mente / cuerpo / alma como un todo.
-  image: /images/holistic.png
+  image: /images/experiences/holistic.png
 ---
