@@ -2,6 +2,7 @@
 title: Inicio
 header:
   video: /video/hero.mp4
+  wa: https://wa.me/9511231212
 bungalows:
   title: Bungalows
   description: No contamos mas que con el numero de bungalows adecuados para crear

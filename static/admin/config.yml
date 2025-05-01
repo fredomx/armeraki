@@ -19,6 +19,7 @@ collections:
         fields:
           - { label: "Sección principal", name: "header", widget: "object", fields: [
               { label: "Video principal", name: "video", widget: "file" },
+              { label: "Botón de WhatsApp", name: "wa", widget: "string" },
         
             ] }
           - { label: "Sección Bungalows", name: "bungalows", widget: "object", fields: [
