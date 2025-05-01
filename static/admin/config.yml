@@ -12,7 +12,7 @@ collections:
   - name: "homepage"
     label: "Página inicio"
     files:
-      - file: "content/home/index.md"
+      - file: "content/home/_index.md"
         label: "Página de inicio"
         name: "homepage"
         fields:
