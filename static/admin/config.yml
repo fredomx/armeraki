@@ -16,6 +16,10 @@ collections:
         label: "Página de inicio"
         name: "homepage"
         fields:
+          - { label: "Sección principal", name: "header", widget: "object", fields: [
+              { label: "Video principal", name: "video", widget: "video" },
+        
+            ] }
           - { label: "Sección Bungalows", name: "bungalows", widget: "object", fields: [
               { label: "Encabezado Bungalows", name: "title", widget: "string" },
               { label: "Descripción Bungalows", name: "description", widget: "string" }
