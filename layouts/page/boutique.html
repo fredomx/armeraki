@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
+    {{ with .Site.GetPage "boutique" }}
     
     <header class="site-header js-site-header">
       <div class="container-fluid">
@@ -72,12 +73,18 @@
 
     <!-- Banner section -->
 
-    <section class="site-hero" style="background-image: url(/images/boutique/banner.JPG); background-color: rgba(255, 255, 255, 0.5); opacity: 0.9;" data-stellar-background-ratio="0.5">
-      <div class="container">
+    <section class="site-hero"
+    style="background-image: url('{{ .Params.header.banner }}'); background-color: rgba(255, 255, 255, 0.5); opacity: 0.9;"
+    data-stellar-background-ratio="0.5">      <div class="container">
+        
          <div class="row site-hero-inner justify-content-center align-items-center">
           <div class="col-lg-12 text-center" data-aos="fade-up">
             <span class=""><img src="/images/ico-bourique.svg" alt="Bolt Icon" width="100"></span>
-            <h3 class="heading text-center mt-4">La veraniega</h3>
+            {{ with .Params.header }}
+
+            <h3 class="heading text-center mt-4">{{ .title }}</h3>
+            {{ end }}
+        
           </div>
         
         </div>
@@ -90,6 +97,7 @@
     <!-- SECTION Boutique Header -->
 
     <div class="container mt-5 pt-5 mb-5 pb-5" data-aos="fade-up">
+      {{ with .Params.header }}
       <div class="row">
           <!-- Column 1 Horario -->
           <div class="col-lg-4">
@@ -97,7 +105,7 @@
               <span class="pr-md-3 ml-4"><img src="/images/icons/clock.png" alt="Bolt Icon" width="60"></span>
               <div class="text-uppercase">
                 <h4>Horario</h4>
-                <p>10:00 a 19:00 hrs</p>
+                <p>{{ .horario }}</p>
               </div>
   
             </div>
@@ -105,11 +113,10 @@
   
           <!-- Column 2: Title and Paragraph -->
           <div class="col-lg-6 container">
-            <p>En nuestra boutique encontrarás lo mejor de lo mejor de Oaxaca en toda su esencia y placer. Para tu cuerpo, para tu mente, para tu bienestar entero.</p>
-            <p>Explora, regálate, o comparte con tus amados la completud de esa conexión con lo que nos da la tierra, con productos naturales, y con materiales amigables con el medio ambiente (por supuesto).</p>
-            <p>Llévalos a todas partes para dar un mensaje de conciencia a todo el mundo... o simplemente ¡porque son hermosos!</p>
+            <p>{{ .description | markdownify }}</p>
           </div>
       </div>
+      {{ end }}
   </div>
 
   <!-- SECTION Boutique Header -->
@@ -125,29 +132,42 @@
 
               <!-- LLeft side with slider -->
               <div class="col-md-7">
+                {{ with .Params.galeria }}
+
                   <div class="home-slider major-caousel owl-carousel mb-5" data-aos="fade-up" data-aos-delay="200">
                       <div class="slider-item">
-                          <a href="/images/boutique/boutique-gallery.png" data-fancybox="images" data-caption="Caption for this image"><img src="/images/boutique/boutique-gallery.png" alt="Image placeholder" class="img-fluid"></a>
+                          <a href="{{ .image_one }}" data-fancybox="images"><img src="{{ .image_one }}" alt="Image placeholder" class="img-fluid"></a>
                       </div>
                       <div class="slider-item">
-                        <a href="/images/boutique/boutique-gallery.png" data-fancybox="images" data-caption="Caption for this image"><img src="/images/boutique/boutique-gallery.png" alt="Image placeholder" class="img-fluid"></a>
+                          <a href="{{ .image_two }}" data-fancybox="images"><img src="{{ .image_two }}" alt="Image placeholder" class="img-fluid"></a> 
                       </div>
                       <div class="slider-item">
-                        <a href="/images/boutique/boutique-gallery.png" data-fancybox="images" data-caption="Caption for this image"><img src="/images/boutique/boutique-gallery.png" alt="Image placeholder" class="img-fluid"></a>
+                          <a href="{{ .image_three }}" data-fancybox="images"><img src="{{ .image_three }}" alt="Image placeholder" class="img-fluid"></a>
+                      </div>
+                      <div class="slider-item">
+                          <a href="{{ .image_four }}" data-fancybox="images"><img src="{{ .image_four }}" alt="Image placeholder" class="img-fluid"></a>  
+                      </div>
+                      <div class="slider-item">
+                          <a href="{{ .image_five }}" data-fancybox="images"><img src="{{ .image_five }}" alt="Image placeholder" class="img-fluid"></a>
                       </div>
                      
                   </div>
                   <!-- END slider -->
+                  {{ end}}
+
               </div>
 
                <!-- Right side with h2 and paragraph -->
                <div class="col-md-5" data-aos="fade-up" data-aos-delay="200">
                 <div class="left-content">
+                  {{ with .Params.galeria }}
                     <h3 class="ad-header">Marcas comprometidas <strong>con el medio ambiente</strong></h3>
+                    <p>{{ .description}}</p>
                     <!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                       Aenean commodo ligula eget dolor. Aenean massa.
                       Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
                     </p> -->
+                  {{ end}}
                 </div>
             </div>
           </div>
@@ -243,5 +263,6 @@
     
 
     <script src="/js/main.js"></script>
+    {{ end }}
   </body>
 </html>
