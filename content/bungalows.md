@@ -12,17 +12,17 @@ header:
   hora_llegada: 1:00 PM
   hora_salida: 12:00 PM
 philia_card:
-  title: Philia
+  title: Philia 1
   description: Philia se relaciona das relaciones fraternas y la conciencia de
-    ayudarse unos a olos.
+    ayudarse unos a olos. 1
 eros_card:
-  title: Eros
+  title: Eros 1
   description: Philia se relaciona das relaciones fraternas y la conciencia de
-    ayudarse unos a olos.
+    ayudarse unos a olos. 1
 agape_card:
-  title: Agape
+  title: Agape 1
   description: Philia se relaciona das relaciones fraternas y la conciencia de
-    ayudarse unos a olos.
+    ayudarse unos a olos. 1
 philia_section:
   title: Philia
   subtitle: Master Suite
