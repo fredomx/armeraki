@@ -25,8 +25,8 @@ galeria:
 
     Llévalos a todas partes para dar un mensaje de conciencia a todo el mundo... o simplemente ¡porque son hermosos!
   image_one: /images/boutique/boutique-gallery.png
-  image_two: /images/dual-1.png
-  image_three: /images/dual-2.png
-  image_four: /images/eneko-urunuela-i2ysmeuagdy-unsplash.jpg
-  image_five: /images/holistic.png
+  image_two: /images/boutique/boutique-gallery.png
+  image_three: /images/boutique/boutique-gallery.png
+  image_four: /images/boutique/boutique-gallery.png
+  image_five: /images/boutique/boutique-gallery.png
 ---
