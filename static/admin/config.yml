@@ -17,7 +17,7 @@ collections:
         name: "homepage"
         fields:
           - { label: "Sección principal", name: "header", widget: "object", fields: [
-              { label: "Video principal", name: "video", widget: "video" },
+              { label: "Video principal", name: "video", widget: "file" },
         
             ] }
           - { label: "Sección Bungalows", name: "bungalows", widget: "object", fields: [
