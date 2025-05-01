@@ -81,13 +81,7 @@
     <section class="site-hero">
       {{ with .Params.header }}
 
-      <a href="{{ .wa }}"
-          class="whatsapp-float"
-          target="_blank"
-          rel="noopener"
-        >
-          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
-        </a>
+
 
       <video autoplay loop muted playsinline class="hero-video">
         
@@ -95,9 +89,10 @@
         
       </video>
 
-      {{ end }} 
       
+
       <div class="container">
+
         <div class="row site-hero-inner justify-content-center align-items-center">
           <div class="col-md-10 text-left" data-aos="fade-up">
             <!-- <span class="custom-caption text-uppercase text-white d-block  mb-3">Welcome To 5 <span class="fa fa-star text-primary"></span>   Hotel</span> -->
@@ -105,6 +100,16 @@
           </div>
         </div>
       </div>
+
+      <div class="container">
+        <a href="{{ .wa }}" class="whatsapp-float" target="_blank" rel="noopener">
+          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+        </a>
+      </div>
+
+    </section>
+
+    {{ end }} 
 
       <!-- <a class="mouse smoothscroll" href="#next">
         <div class="mouse-icon">
@@ -164,7 +169,8 @@
       </div> -->
 
 
-    </section>
+   
+
     <!-- END section -->
 
     <!-- <section class="section bg-light pb-0"  >
