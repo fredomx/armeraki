@@ -78,6 +78,7 @@
     <!-- END head -->
 
     
+    
     <section class="site-hero">
       {{ with .Params.header }}
 
@@ -101,12 +102,7 @@
         </div>
       </div>
 
-      <div class="container">
-        <a href="{{ .wa }}" class="whatsapp-float" target="_blank" rel="noopener">
-          <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
-        </a>
-      </div>
-
+     
     </section>
 
     {{ end }} 
@@ -491,6 +487,17 @@
     
 
     <script src="/js/main.js"></script>
+
+    {{ with .Params.header }}
+    <div class="container">
+      <a href="{{ .wa }}" class="whatsapp-float" target="_blank" rel="noopener">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+      </a>
+    </div>
+    
+
+    {{ end }}
+
 
     {{ end }}
 

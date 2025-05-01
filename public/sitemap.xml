@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://armeraki.com/boutique/</loc>
+    <loc>http://localhost:1313/boutique/</loc>
   </url><url>
-    <loc>https://armeraki.com/bungalows/</loc>
+    <loc>http://localhost:1313/bungalows/</loc>
   </url><url>
-    <loc>https://armeraki.com/cafe/</loc>
+    <loc>http://localhost:1313/cafe/</loc>
   </url><url>
-    <loc>https://armeraki.com/experiences/</loc>
+    <loc>http://localhost:1313/experiences/</loc>
   </url><url>
-    <loc>https://armeraki.com/footer/</loc>
+    <loc>http://localhost:1313/footer/</loc>
   </url><url>
-    <loc>https://armeraki.com/</loc>
+    <loc>http://localhost:1313/</loc>
   </url><url>
-    <loc>https://armeraki.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://armeraki.com/home/</loc>
+    <loc>http://localhost:1313/home/</loc>
   </url><url>
-    <loc>https://armeraki.com/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>
