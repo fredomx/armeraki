@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Armeraki</title>
-    <link>http://localhost:1313/</link>
+    <link>https://armeraki.com/</link>
     <description>Recent content on Armeraki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://armeraki.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/boutique/</link>
+      <link>https://armeraki.com/boutique/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/boutique/</guid>
+      <guid>https://armeraki.com/boutique/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/bungalows/</link>
+      <link>https://armeraki.com/bungalows/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bungalows/</guid>
+      <guid>https://armeraki.com/bungalows/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/cafe/</link>
+      <link>https://armeraki.com/cafe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cafe/</guid>
+      <guid>https://armeraki.com/cafe/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/experiences/</link>
+      <link>https://armeraki.com/experiences/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/experiences/</guid>
+      <guid>https://armeraki.com/experiences/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/footer/</link>
+      <link>https://armeraki.com/footer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/footer/</guid>
+      <guid>https://armeraki.com/footer/</guid>
       <description></description>
     </item>
   </channel>
