@@ -8,6 +8,7 @@ media_folder: "static/images"
 public_folder: "/images"
 
 
+
 collections:
   - name: "homepage"
     label: "Página inicio"
@@ -195,19 +196,21 @@ collections:
               { label: "Imágen", name: "image", widget: "image" },
               { label: "Url 1", name: "url", widget: "string" },
             ] }      
-            
+
   - name: "footer"
     label: "Footer"
     files:
       - file: "content/footer.md"
         label: "Contenido del Footer"
         name: "footer"
+        media_folder: "static/documents"
+        public_folder: "/documents"
         fields:
           - { label: "Ubicación", name: "ubicacion", widget: "string" }
           - { label: "Correo electrónico", name: "correo", widget: "string" }
           - { label: "Teléfono", name: "telefono", widget: "string" }
           - { label: "Facebook", name: "facebook", widget: "string" }
           - { label: "Instagram", name: "instagram", widget: "string" }
-          - { label: "Aviso de privacidad", name: "aviso_privacidad", widget: "file" }
-          - { label: "Términos y condiciones", name: "terminos_condiciones", widget: "file" }
-          - { label: "Políticas de entrega", name: "politicas_entrega", widget: "file" }
+          - { label: "Aviso de privacidad", name: "aviso", widget: "file", media_folder: "static/documents", public_folder: "/documents"}
+          - { label: "Términos y condiciones", name: "terminos", widget: "file", media_folder: "static/documents", public_folder: "/documents"}
+          - { label: "Políticas de entrega", name: "politicas", widget: "file", media_folder: "static/documents", public_folder: "/documents" }
