@@ -13,7 +13,6 @@ header:
 
     Llévalos a todas partes para dar un mensaje de conciencia a todo el mundo... o simplemente ¡porque son hermosos!
   horario: 10:00 a 19:00 hrs
-  image: /images/eneko-urunuela-i2ysmeuagdy-unsplash.jpg
 galeria:
   description: >-
     En nuestra boutique encontrarás lo mejor de lo mejor de Oaxaca en toda su
