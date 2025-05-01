@@ -1,7 +1,7 @@
 ---
 title: Inicio
 header:
-  video: /images/video2.mp4
+  video: /images/hero.mp4
 bungalows:
   title: Bungalows
   description: No contamos mas que con el numero de bungalows adecuados para crear
