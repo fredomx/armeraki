@@ -17,7 +17,7 @@ collections:
         name: "homepage"
         fields:
           - { label: "Sección principal", name: "header", widget: "object", fields: [
-              { label: "Video principal", name: "video", widget: "video" },
+              { label: "Video principal", name: "video", widget: "file" },
         
             ] }
           - { label: "Sección Bungalows", name: "bungalows", widget: "object", fields: [
@@ -195,4 +195,19 @@ collections:
               { label: "Imágen", name: "image", widget: "image" },
               { label: "Url 1", name: "url", widget: "string" },
             ] }      
-          
+            
+  - name: "footer"
+    label: "Footer"
+    files:
+      - file: "content/footer.md"
+        label: "Contenido del Footer"
+        name: "footer"
+        fields:
+          - { label: "Ubicación", name: "ubicacion", widget: "string" }
+          - { label: "Correo electrónico", name: "correo", widget: "string" }
+          - { label: "Teléfono", name: "telefono", widget: "string" }
+          - { label: "Facebook", name: "facebook", widget: "string" }
+          - { label: "Instagram", name: "instagram", widget: "string" }
+          - { label: "Aviso de privacidad", name: "aviso_privacidad", widget: "file" }
+          - { label: "Términos y condiciones", name: "terminos_condiciones", widget: "file" }
+          - { label: "Políticas de entrega", name: "politicas_entrega", widget: "file" }

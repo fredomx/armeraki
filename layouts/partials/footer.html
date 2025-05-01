@@ -1,0 +1,70 @@
+<footer class="section-borderless footer-section">
+    {{ with .Site.GetPage "footer" }}
+    <div class="container">
+      <div class="text-center d-flex flex-column align-items-center justify-content-center mb-4">
+        <a href="/">
+          <img src="/images/logo-white.png" alt="Armeraki Logo" class="footer-svg d-block mb-2">
+        </a>
+        <img src="/images/footer-icons.svg" alt="Armeraki Logo" class="footer-svg d-block mt-3 mb-4">
+      </div>
+  
+      <div class="row mb-2 mt-4">
+        <!-- First Section -->
+        <div class="col-md-6 mb-3 mt-4">
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="list-unstyled link">
+                <li>Ubicación</li>
+                <li><a href="https://www.google.com/maps/search/?api=1&query={{ urlquery .Params.ubicacion }}" target="_blank">{{ .Params.ubicacion }}</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled link">
+                <li>Comuníquese con nosotros</li>
+                <li><a href="mailto:{{ .Params.correo }}">{{ .Params.correo }}</a></li>
+                <li><a href="tel:{{ .Params.telefono }}">{{ .Params.telefono }}</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Second Section -->
+        <div class="col-md-6 mb-3 mt-4">
+          <div class="row">
+            <div class="col-md-6 pr-md-5 contact-info social">
+              <ul class="list-unstyled link">
+                <li><a href="#">Síganos</a></li>
+                <li>
+                  <a href="{{ .Params.facebook }}" target="_blank"><span class="fa fa-facebook"></span></a>
+                  <a href="{{ .Params.instagram }}" target="_blank"><span class="fa fa-instagram"></span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled link">
+                <li><a href="{{ .Params.aviso_de_privacidad }}" target="_blank">Aviso de privacidad</a></li>
+                <li><a href="{{ .Params.terminos_y_condiciones }}" target="_blank">Términos y condiciones</a></li>
+                <li><a href="{{ .Params.politicas_de_entrega }}" target="_blank">Políticas de entrega y reembolso</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Line Dividing Two Sections -->
+      <div class="row mb-2">
+        <div class="col-12">
+          <hr style="border-top: 1px solid #ccc;">
+        </div>
+      </div>
+  
+      <!-- Copyright Section -->
+      <div class="row">
+        <p class="col-12 text-center" style="min-width: 200px; margin-bottom: 0;">
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script> Reservados todos los derechos.
+        </p>
+      </div>
+    </div>
+    {{ end }}
+  </footer>
+  
