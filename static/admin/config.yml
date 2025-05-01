@@ -211,6 +211,4 @@ collections:
           - { label: "Teléfono", name: "telefono", widget: "string" }
           - { label: "Facebook", name: "facebook", widget: "string" }
           - { label: "Instagram", name: "instagram", widget: "string" }
-          - { label: "Aviso de privacidad", name: "aviso", widget: "file", media_folder: "static/documents", public_folder: "/documents"}
-          - { label: "Términos y condiciones", name: "terminos", widget: "file", media_folder: "static/documents", public_folder: "/documents"}
-          - { label: "Políticas de entrega", name: "politicas", widget: "file", media_folder: "static/documents", public_folder: "/documents" }
+        
