@@ -88,7 +88,7 @@ collections:
               { label: "Descripción", name: "description", widget: "text" }
             ] }
           - { label: "Botón de reserva", name: "reserve_button", widget: "object", fields: [
-              { label: "Link de reserva", name: "link", widget: "url" },
+              { label: "Link de reserva", name: "link", widget: "string" },
             ] }
           
   - name: "experiences"
@@ -187,9 +187,9 @@ collections:
               { label: "Imágen 6", name: "image_six", widget: "image" },
             ] }      
           - { label: "Menu", name: "menu", widget: "object", fields: [
-              { label: "Titulo", name: "title", widget: "richtext" },
+              { label: "Titulo", name: "title", widget: "text" },
               { label: "Descripción", name: "description", widget: "text" },
               { label: "Imágen", name: "image", widget: "image" },
-              { label: "Url 1", name: "url", widget: "url" },
+              { label: "Url 1", name: "url", widget: "string" },
             ] }      
           
