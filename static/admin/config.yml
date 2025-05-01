@@ -55,7 +55,7 @@ collections:
         fields:
           - { label: "Seccion principal", name: "header", widget: "object", fields: [
               { label: "Encabezado", name: "title", widget: "string" },
-              { label: "Descripción", name: "description", widget: "string" },
+              { label: "Descripción", name: "description", widget: "text" },
               { label: "Imagen", name: "image", widget: "image" },
               { label: "Hora de llegada", name: "hora_llegada", widget: "string" },
               { label: "Hora de salida", name: "hora_salida", widget: "string" }
