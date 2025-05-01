@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
+  {{ with .Site.GetPage "bungalows" }}
+
     
     <header class="site-header position-relative js-site-header">
       <div class="container-fluid">
@@ -75,27 +77,35 @@
 
     <div class="container-fluid mt-4 mb-5 pb-5" data-aos="fade-up">
       <div class="row">
+        {{ with .Params.header }}
           <!-- Column 1: Photo -->
           <div class="col-lg-5 mb-4 p-4">
-              <img src="/images/bungalows/bungalows.png" alt="Photo" class="img-fluid">
+              <img src="{{ .image }}" alt="Photo" class="img-fluid">
           </div>
   
           <!-- Column 2: Title and Paragraph -->
           <div class="col-lg-5 col-10 container-fluid">
-            <h2 class="heading mb-5">Bungalows</h2>
-            <p>Estar completo. Ser uno mismo. Tu lugar especial y exclusivo para conectarte dentro de la unidad de tu inspiración. Si buscas una experiencia tranquila y elevada en su conjunto para tu bienestar y placer. Quédate en Armeraki Oaxaca. Lleva tu confort a un nivel superior en nuestras habitaciones, conecta con la tierra sagrada y la naturaleza de Oaxaca en un lugar hermoso, seguro y lujoso.</p>
+
+            
+            <h2 class="heading mb-5">{{ .title }}</h2>
+           
+            <p>{{ .description }}</p>
+            
+
+            
             <div class="row">
               <span class="mb-4"><img src="/images/icons/clock.png" alt="Bolt Icon" width="60"></span>
               <div class="col-lg-3 col-4 text-uppercase">
                 <h6>Llegada</h6>
-                <p>1:00 PM</p>
+                <p>{{ .hora_llegada }}</p>
               </div>
               <div class="vertical-divider"></div>
               <div class="col-lg-3 col-4 text-uppercase">
                 <h6>Salida</h6>
-                <p>12:00 PM</p>
+                <p>{{ .hora_salida }}</p>
               </div>
             </div>
+            
           </div>
   
           <!-- Column 3: Social Icons -->
@@ -103,6 +113,7 @@
             <a href="https://www.facebook.com/share/1Hbe4kRNA7/?mibextid=wwXIfr" target="_blank" class="d-block mb-2"><span class="fa fa-facebook"></span></a>
             <a href="https://www.instagram.com/be.armeraki?igsh=OW5iMDhlOWJwaXRi" target="_blank" class="d-block mb-2"><span class="fa fa-instagram"></span></a>
         </div>
+        {{ end }}
       </div>
   </div>
 
@@ -1332,5 +1343,6 @@
 </script>
 
     <script src="/js/main.js"></script>
+  {{ end }}
   </body>
 </html>

@@ -44,4 +44,50 @@ collections:
               { label: "Descripción de evento", name: "description", widget: "string" },
               { label: "Imagen de evento", name: "image", widget: "image" },
             ] }
+
+
+  - name: "bungalows"
+    label: "Página Bungalows"
+    files:
+      - file: "content/bungalows.md"
+        label: "Página de Bungalows"
+        name: "bungalows"
+        fields:
+          - { label: "Seccion principal", name: "header", widget: "object", fields: [
+              { label: "Encabezado", name: "title", widget: "string" },
+              { label: "Descripción", name: "description", widget: "string" },
+              { label: "Imagen", name: "image", widget: "image" },
+              { label: "Hora de llegada", name: "hora_llegada", widget: "string" },
+              { label: "Hora de salida", name: "hora_salida", widget: "string" }
+            ] }
+          - { label: "Philia card", name: "philia_card", widget: "object", fields: [
+              { label: "Título", name: "title", widget: "string" },
+              { label: "Descripción", name: "description", widget: "string" }
+            ] }
+          - { label: "Eros card", name: "eros_card", widget: "object", fields: [
+              { label: "Título", name: "title", widget: "string" },
+              { label: "Descripción", name: "description", widget: "string" }
+            ] }
+          - { label: "Agape card", name: "agape_card", widget: "object", fields: [
+              { label: "Título", name: "title", widget: "string" },
+              { label: "Descripción", name: "description", widget: "string" }
+            ] }
+          - { label: "Philia sección", name: "philia_section", widget: "object", fields: [
+              { label: "Título", name: "title", widget: "string" },
+              { label: "Subtítulo", name: "subtitle", widget: "string" },
+              { label: "Descripción", name: "description", widget: "text" }
+            ] }
+          - { label: "Eros sección", name: "eros_section", widget: "object", fields: [
+              { label: "Título", name: "title", widget: "string" },
+              { label: "Subtítulo", name: "subtitle", widget: "string" },
+              { label: "Descripción", name: "description", widget: "text" }
+            ] }
+          - { label: "Agape sección", name: "agape_section", widget: "object", fields: [
+              { label: "Título", name: "title", widget: "string" },
+              { label: "Subtítulo", name: "subtitle", widget: "string" },
+              { label: "Descripción", name: "description", widget: "text" }
+            ] }
+          - { label: "Botón de reserva", name: "reserve_button", widget: "object", fields: [
+              { label: "Link de reserva", name: "link", widget: "string" },
+            ] }
           
