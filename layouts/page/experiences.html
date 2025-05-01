@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
+  {{ with .Site.GetPage "experiences" }}
     
     <header class="site-header position-relative js-site-header">
       <div class="container-fluid">
@@ -79,10 +80,10 @@
   
           <!-- Column 1: Title and Paragraph -->
           <div class="col-6 container-fluid">
-            {{ with .Content }}
-            <h3 class="bungalow-heading">{{ .Title }}</h3>
+            {{ with .Params.header }}
+            <h3 class="bungalow-heading">{{ .title }}</h3>
             <!-- <h3 class="bungalow-heading">Experiences & Events</h3> -->
-            <p>Con el mismo espíritu que emana del 3er nivel de bienestar de la mente (después del nivel sensitivo y conceptual) en Armeraki estamos listos para ofrecerte a ti y a tus invitados la ceremonia, recepción o evento petit que estás buscando acorde a tu estilo de vida.</p>
+            <p>{{ .description }}</p>
           
             {{ end }}
           </div>
@@ -108,199 +109,222 @@
 
         <!-- Image 1 -->
         <div class="col-md-3 p-0">
+          {{ with .Params.experience_one }}
           <a href="#show1">
               <div class="grid-card" data-toggle="collapse" data-target=".collapse.show1">
-                  <img src="/images/experiences/1.png" class="img-fluid">
+                  <img src="{{ .image }}" class="img-fluid">
                   <div class="grid-overlay-content">
-                      <h3>Universe of two:
-                          ask her/him to
-                          marry you</h3>
+                    
+                      <h3>{{ .title }}</h3>
                   </div>
                   <div class="grid-overlay"></div>
               </div>
           </a>
+          {{ end }}
+      </div>
+      
+
+       <!-- Image 2 -->
+       <div class="col-md-3 p-0">
+        {{ with .Params.experience_two }}
+        <a href="#show2">
+            <div class="grid-card" data-toggle="collapse" data-target=".collapse.show2">
+                <img src="{{ .image }}" class="img-fluid">
+                <div class="grid-overlay-content">
+                  
+                    <h3>{{ .title }}</h3>
+                </div>
+                <div class="grid-overlay"></div>
+            </div>
+        </a>
+        {{ end }}
+    </div>
+      <!-- Image 3 -->
+      <div class="col-md-3 p-0">
+        {{ with .Params.experience_three }}
+        <a href="#show3">
+            <div class="grid-card" data-toggle="collapse" data-target=".collapse.show3">
+                <img src="{{ .image }}" class="img-fluid">
+                <div class="grid-overlay-content">
+                  
+                    <h3>{{ .title }}</h3>
+                </div>
+                <div class="grid-overlay"></div>
+            </div>
+        </a>
+        {{ end }}
+      </div>
+      <!-- Image 4 -->
+      <div class="col-md-3 p-0">
+        {{ with .Params.experience_four }}
+        <a href="#show4">
+            <div class="grid-card" data-toggle="collapse" data-target=".collapse.show4">
+                <img src="{{ .image }}" class="img-fluid">
+                <div class="grid-overlay-content">
+                  
+                    <h3>{{ .title }}</h3>
+                </div>
+                <div class="grid-overlay"></div>
+            </div>
+        </a>
+        {{ end }}
+      </div>
+      <!-- Image 5 -->
+      <div class="col-md-3 p-0">
+        {{ with .Params.experience_five }}
+        <a href="#show5">
+            <div class="grid-card" data-toggle="collapse" data-target=".collapse.show5">
+                <img src="{{ .image }}" class="img-fluid">
+                <div class="grid-overlay-content">
+                  
+                    <h3>{{ .title }}</h3>
+                </div>
+                <div class="grid-overlay"></div>
+            </div>
+        </a>
+        {{ end }}
+      </div>
+      <!-- Image 6 -->
+      <div class="col-md-3 p-0">
+        {{ with .Params.experience_six }}
+        <a href="#show6">
+            <div class="grid-card" data-toggle="collapse" data-target=".collapse.show6">
+                <img src="{{ .image }}" class="img-fluid">
+                <div class="grid-overlay-content">
+                  
+                    <h3>{{ .title }}</h3>
+                </div>
+                <div class="grid-overlay"></div>
+            </div>
+        </a>
+        {{ end }}
+        </div>
+      <!-- Image 7 -->
+      <div class="col-md-3 p-0">
+        {{ with .Params.experience_seven }}
+        <a href="#show7">
+            <div class="grid-card" data-toggle="collapse" data-target=".collapse.show7">
+                <img src="{{ .image }}" class="img-fluid">
+                <div class="grid-overlay-content">
+                  
+                    <h3>{{ .title }}</h3>
+                </div>
+                <div class="grid-overlay"></div>
+            </div>
+        </a>
+        {{ end }}
+      </div>
+      <!-- Image 8 -->
+      <div class="col-md-3 p-0">
+        {{ with .Params.experience_eight }}
+        <a href="#show8">
+            <div class="grid-card" data-toggle="collapse" data-target=".collapse.show8">
+                <img src="{{ .image }}" class="img-fluid">
+                <div class="grid-overlay-content">
+                  
+                    <h3>{{ .title }}</h3>
+                </div>
+                <div class="grid-overlay"></div>
+            </div>
+        </a>
+        {{ end }}
       </div>
 
-        <!-- Image 2 -->
-        <div class="col-md-3 p-0">
-          <a href="#show2">
-            <div class="grid-card" data-toggle="collapse" data-target=".collapse.show2">
-              <img src="/images/experiences/2.png" class="img-fluid">
-              <div class="grid-overlay-content">
-                <h3>Petit-exclusive
-                  weddings</h3>
-              </div>
-              <div class="grid-overlay"></div>
-              </div> 
-          </a>
-        </div>
-
-        <!-- Image 3 -->
-        <div class="col-md-3 p-0">
-          <a href="#show3">
-            <div class="grid-card" data-toggle="collapse" data-target=".collapse.show3">
-              <img src="/images/experiences/3.png" class="img-fluid">
-              <div class="grid-overlay-content">
-                <h3>BFF together:
-                  every day is a
-                  special day</h3>
-              </div>
-              <div class="grid-overlay"></div>
-              </div> 
-          </a>
-        </div>
-
-         <!-- Image 4 -->
-         <div class="col-md-3 p-0">
-          <a href="#show4">
-            <div class="grid-card" data-toggle="collapse" data-target=".collapse.show4">
-              <img src="/images/experiences/4.png" class="img-fluid">
-              <div class="grid-overlay-content">
-                <h3>Yoga</h3>
-              </div>
-              <div class="grid-overlay"></div>
-              </div> 
-          </a>
-        </div>
-
-         <!-- Image 5 -->
-         <div class="col-md-3 p-0">
-          <a href="#show5">
-            <div class="grid-card" data-toggle="collapse" data-target=".collapse.show5">
-              <img src="/images/experiences/5.png" class="img-fluid">
-              <div class="grid-overlay-content">
-                <h3>Massage space</h3>
-              </div>
-              <div class="grid-overlay"></div>
-              </div> 
-          </a>
-        </div>
-
-         <!-- Image 6 -->
-         <div class="col-md-3 p-0">
-          <a href="#show6">
-            <div class="grid-card" data-toggle="collapse" data-target=".collapse.show6">
-              <img src="/images/experiences/6.png" class="img-fluid">
-              <div class="grid-overlay-content">
-                <h3>Spa therapy</h3>
-              </div>
-              <div class="grid-overlay"></div>
-              </div> 
-          </a>
-        </div>
-
-         <!-- Image 7 -->
-         <div class="col-md-3 p-0">
-          <a href="#show7">
-            <div class="grid-card" data-toggle="collapse" data-target=".collapse.show7">
-              <img src="/images/experiences/7.png" class="img-fluid">
-              <div class="grid-overlay-content">
-                <h3>Holistic fitness
-                  routine</h3>
-              </div>
-              <div class="grid-overlay"></div>
-              </div> 
-
-          </a>
-        </div>
-
-         <!-- Image 8 -->
-         <div class="col-md-3 p-0">
-          <a href="#show8">
-            <div class="grid-card" data-toggle="collapse" data-target=".collapse.show8">
-              <img src="/images/experiences/8.png" class="img-fluid">
-              <div class="grid-overlay-content">
-                <h3>Special
-                  activities according
-                  to nature</h3>
-              </div>
-              <div class="grid-overlay"></div>
-              </div> 
-          </a>
-        </div>
 
 
 
     </div>
 
     <!-- Content for Image 1 -->
+  
     <section id="show1">
+      {{ with .Params.experience_one }}
       <div class="collapse mt-4 show1">
-        <div class="container mt-5 pb-5" data-aos="fade-up">
-          <p>Content 1</p>
+        <div class="container mt-5 pb-5">
+          <h2>{{ .title }}</h2>
+          <p>{{ .description }}</p>
         </div>
       </div>
+      {{ end }}
     </section>
-    
-
-     <!-- Content for Image 2 -->
-     <section id="show2">
+    <!-- Content for Image 2 -->
+    <section id="show2">
+      {{ with .Params.experience_two }}
       <div class="collapse mt-4 show2">
-        <div class="container mt-5 pb-5" data-aos="fade-up">
-          <p>Content 2</p>
+        <div class="container mt-5 pb-5">
+          <h2>{{ .title }}</h2>
+          <p>{{ .description }}</p>
         </div>
       </div>
+      {{ end }}
     </section>
-
-     <!-- Content for Image 3 -->
-     <section id="show3">
-     <div class="collapse mt-4 show3">
-      <div class="container mt-5 pb-5" data-aos="fade-up">
-        <p>Content 3</p>
-
+    <!-- Content for Image 3 -->
+    <section id="show3">
+      {{ with .Params.experience_three }}
+      <div class="collapse mt-4 show3">
+        <div class="container mt-5 pb-5">
+          <h2>{{ .title }}</h2>
+          <p>{{ .description }}</p>
+        </div>
       </div>
-    </div>
-     </section>
-
-     <!-- Content for Image 4 -->
-     <section id="show4">
-     <div class="collapse mt-4 show4">
-      <div class="container mt-5 pb-5" data-aos="fade-up">
-        <p>Content 4</p>
-
-      </div>
-    </div>
+      {{ end }}
     </section>
-
-       <!-- Content for Image 5 -->
-       <section id="show5">
-       <div class="collapse mt-4 show5">
-        <div class="container mt-5 pb-5" data-aos="fade-up">
-          <p>Content 5</p>
-  
+    <!-- Content for Image 4 -->
+    <section id="show4">
+      {{ with .Params.experience_four }}
+      <div class="collapse mt-4 show4">
+        <div class="container mt-5 pb-5">
+          <h2>{{ .title }}</h2>
+          <p>{{ .description }}</p>
         </div>
       </div>
-      </section>
-
-       <!-- Content for Image 6 -->
-       <section id="show6">
-       <div class="collapse mt-4 show6">
-        <div class="container mt-5 pb-5" data-aos="fade-up">
-          <p>Content 6</p>
-  
+      {{ end }}
+    </section>
+    <!-- Content for Image 5 -->
+    <section id="show5">
+      {{ with .Params.experience_five }}
+      <div class="collapse mt-4 show5">
+        <div class="container mt-5 pb-5">
+          <h2>{{ .title }}</h2>
+          <p>{{ .description }}</p>
         </div>
       </div>
-      </section>
-
+      {{ end }}
+    </section>
+    <!-- Content for Image 6 -->
+    <section id="show6">
+      {{ with .Params.experience_six }}
+      <div class="collapse mt-4 show6">
+        <div class="container mt-5 pb-5">
+          <h2>{{ .title }}</h2>
+          <p>{{ .description }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </section>
     <!-- Content for Image 7 -->
     <section id="show7">
-    <div class="collapse mt-4 show7">
-      <div class="container mt-5 pb-5" data-aos="fade-up">
-        <p>Content 7</p>
-
+      {{ with .Params.experience_seven }}
+      <div class="collapse mt-4 show7">
+        <div class="container mt-5 pb-5">
+          <h2>{{ .title }}</h2>
+          <p>{{ .description }}</p>
+        </div>
       </div>
-    </div>
+      {{ end }}
     </section>
-    
     <!-- Content for Image 8 -->
     <section id="show8">
-    <div class="collapse mt-4 show8">
-      <div class="container mt-5 pb-5" data-aos="fade-up">
-        <p>Content 8</p>
-
+      {{ with .Params.experience_eight }}
+      <div class="collapse mt-4 show8">
+        <div class="container mt-5 pb-5">
+          <h2>{{ .title }}</h2>
+          <p>{{ .description }}</p>
+        </div>
       </div>
-    </div>
+      {{ end }}
     </section>
+    
   
 
     </div>
@@ -414,4 +438,5 @@
 
     <script src="/js/main.js"></script>
   </body>
+  {{ end }}
 </html>

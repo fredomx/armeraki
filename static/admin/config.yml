@@ -91,3 +91,54 @@ collections:
               { label: "Link de reserva", name: "link", widget: "string" },
             ] }
           
+  - name: "experiences"
+    label: "Página Experiences"
+    files:
+      - file: "content/experiences.md"
+        label: "Página de Experiences"
+        name: "experiences"
+        fields:
+          - { label: "Seccion principal", name: "header", widget: "object", fields: [
+              { label: "Encabezado", name: "title", widget: "string" },
+              { label: "Descripción", name: "description", widget: "text" },
+            ] }
+          - { label: "Experience 1", name: "experience_one", widget: "object", fields: [
+              { label: "Título", name: "title", widget: "string" },
+              { label: "Descripción", name: "description", widget: "text" },
+              { label: "Imágen", name: "image", widget: "image" }
+            ] }
+          - { label: "Experience 2", name: "experience_two", widget: "object", fields: [
+              { label: "Título", name: "title", widget: "string" },
+              { label: "Descripción", name: "description", widget: "text" },
+              { label: "Imágen", name: "image", widget: "image" }
+            ] }
+          - { label: "Experience 3", name: "experience_three", widget: "object", fields: [
+              { label: "Título", name: "title", widget: "string" },
+              { label: "Descripción", name: "description", widget: "text" },
+              { label: "Imágen", name: "image", widget: "image" }
+            ] }
+          - { label: "Experience 4", name: "experience_four", widget: "object", fields: [
+              { label: "Título", name: "title", widget: "string" },
+              { label: "Descripción", name: "description", widget: "text" },
+              { label: "Imágen", name: "image", widget: "image" }
+            ] }
+          - { label: "Experience 5", name: "experience_five", widget: "object", fields: [
+              { label: "Título", name: "title", widget: "string" },
+              { label: "Descripción", name: "description", widget: "text" },
+              { label: "Imágen", name: "image", widget: "image" }
+            ] }
+          - { label: "Experience 6", name: "experience_six", widget: "object", fields: [
+              { label: "Título", name: "title", widget: "string" },
+              { label: "Descripción", name: "description", widget: "text" },
+              { label: "Imágen", name: "image", widget: "image" }
+            ] }
+          - { label: "Experience 7", name: "experience_seven", widget: "object", fields: [
+              { label: "Título", name: "title", widget: "string" },
+              { label: "Descripción", name: "description", widget: "text" },
+              { label: "Imágen", name: "image", widget: "image" }
+            ] }
+          - { label: "Experience 8", name: "experience_eight", widget: "object", fields: [
+              { label: "Título", name: "title", widget: "string" },
+              { label: "Descripción", name: "description", widget: "text" },
+              { label: "Imágen", name: "image", widget: "image" }
+            ] }
