@@ -60,6 +60,6 @@ agape_section:
 
      Inspirado en la admiración y la paz de la naturaleza, este exclusivo bungalow te inspira el ambiente para disfrutar al máximo de tu estancia.
 reserve_button:
-  link: string
-title: Bungalows
+  link: https://www.apple.com/
+
 ---

@@ -89,7 +89,7 @@
             
             <h2 class="heading mb-5">{{ .title }}</h2>
            
-            <p>{{ .description }}</p>
+            <p>{{ .description | markdownify }}</p>
             
 
             
@@ -237,7 +237,7 @@
                 </div>
               </div>
             </div>
-            <p>{{ .description }}</p>
+            <p>{{ .description | markdownify }}</p>
             {{ end }} 
           </div>
           <!-- Column 2: Services -->
@@ -326,7 +326,11 @@
           <div class="col-md-4">
             <div class="left-content">
               <h2>¡Quiero reservar!</h2>
-              <button class="btn btn-reserve">Disponibilidad</button>
+              {{ with .Params.reserve_button }}
+              <a href="{{ .link }}" target="_blank">
+                <button class="btn btn-reserve">Disponibilidad</button>
+              </a>
+              {{ end }}
             </div>
           </div>
           <!-- Right side with slider -->
@@ -407,7 +411,7 @@
           <div class="col-lg-6">
             {{ with .Params.eros_section }}
 
-            <h2 class="bungalow-heading">{{ .titke }}</h2>
+            <h2 class="bungalow-heading">{{ .title }}</h2>
             <h4 class="mb-5 text-uppercase">{{ .subtitle }}</h4>
             <div class="row m-2">
               <div class="col-lg-3">
@@ -429,7 +433,7 @@
                 </div>
               </div>
             </div>
-            <p>{{ .description }}</p>
+            <p>{{ .description | markdownify }}</p>
             {{ end }}
           </div>
           <!-- Column 2: Services -->
@@ -518,7 +522,11 @@
             <div class="col-md-4">
               <div class="left-content">
                 <h2>¡Quiero reservar!</h2>
+                {{ with .Params.reserve_button }}
+              <a href="{{ .link }}" target="_blank">
                 <button class="btn btn-reserve">Disponibilidad</button>
+              </a>
+              {{ end }}
               </div>
             </div>
             <!-- Right side with slider -->
@@ -664,7 +672,11 @@
             <div class="col-md-4">
               <div class="left-content">
                 <h2>¡Quiero reservar!</h2>
+                {{ with .Params.reserve_button }}
+              <a href="{{ .link }}" target="_blank">
                 <button class="btn btn-reserve">Disponibilidad</button>
+              </a>
+              {{ end }}
               </div>
             </div>
             <!-- Right side with slider -->
@@ -721,7 +733,7 @@
             </div>
           </div>
         </div>
-        <p>{{ .description }}</p>
+        <p>{{ .description | markdownify }}</p>
         {{ end }} 
       </div>
       <!-- Column 2: Services -->
@@ -809,7 +821,11 @@
           <div class="col-md-4">
             <div class="left-content">
               <h2>¡Quiero reservar!</h2>
-              <button class="btn btn-reserve">Disponibilidad</button>
+              {{ with .Params.reserve_button }}
+              <a href="{{ .link }}" target="_blank">
+                <button class="btn btn-reserve">Disponibilidad</button>
+              </a>
+              {{ end }}
             </div>
           </div>
           <!-- Right side with slider -->
@@ -892,7 +908,7 @@
               </div>
             </div>
           </div>
-          <p>{{ .description }}</p>
+          <p>{{ .description | markdownify}}</p>
           {{ end }}
         </div>
         <!-- Column 2: Services -->
@@ -1010,7 +1026,7 @@
               </div>
             </div>
           </div>
-         <p>{{ .description }}</p>
+         <p>{{ .description | markdownify }}</p>
           {{ end }} 
         </div>
         <!-- Column 2: Services -->
@@ -1128,7 +1144,7 @@
               </div>
             </div>
           </div>
-          <p>{{ .description }}</p>
+          <p>{{ .description | markdownify }}</p>
           {{ end }}
         </div>
         <!-- Column 2: Services -->
@@ -1222,7 +1238,11 @@
         <div class="col-md-4">
           <div class="left-content">
             <h2>¡Quiero reservar!</h2>
-            <button class="btn btn-reserve">Disponibilidad</button>
+            {{ with .Params.reserve_button }}
+              <a href="{{ .link }}" target="_blank">
+                <button class="btn btn-reserve">Disponibilidad</button>
+              </a>
+              {{ end }}
           </div>
         </div>
     
